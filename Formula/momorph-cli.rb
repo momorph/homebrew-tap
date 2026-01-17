@@ -5,21 +5,21 @@
 class MomorphCli < Formula
   desc "MoMorph CLI"
   homepage "https://github.com/momorph/cli"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/momorph/cli/releases/download/v0.2.4/momorph-cli_0.2.4_darwin_amd64.tar.gz"
-      sha256 "e4b57e0a4f10f86e99a23deb23f2ff0b1844316d716c94ca9d4a091a9a861689"
+      url "https://github.com/momorph/cli/releases/download/v0.2.5/momorph-cli_0.2.5_darwin_amd64.tar.gz"
+      sha256 "6e084fd509f4ecc5aea8ecea642ed7542a809d1beaa05a8b0ddb0ad25dd87eac"
 
       def install
         bin.install "momorph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/momorph/cli/releases/download/v0.2.4/momorph-cli_0.2.4_darwin_arm64.tar.gz"
-      sha256 "dcaf47c554c88c1edcd1399c49354236f1bc17b82d0f86b2c90945d57c29e367"
+      url "https://github.com/momorph/cli/releases/download/v0.2.5/momorph-cli_0.2.5_darwin_arm64.tar.gz"
+      sha256 "4da298c24e0cd7199f2c94c86b117b89b1a8a9ad31802d583d50c766cf9081f1"
 
       def install
         bin.install "momorph"
@@ -29,15 +29,15 @@ class MomorphCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/momorph/cli/releases/download/v0.2.4/momorph-cli_0.2.4_linux_amd64.tar.gz"
-      sha256 "c46c6a320163997345c1379cf8378941ec0db31a5c6b5866b8bdd643c9147589"
+      url "https://github.com/momorph/cli/releases/download/v0.2.5/momorph-cli_0.2.5_linux_amd64.tar.gz"
+      sha256 "4d3ea3cb3e79ba94c0b0f99083d2baa3e479ea6aef30c6463e15cfe1637ee9a9"
       def install
         bin.install "momorph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/momorph/cli/releases/download/v0.2.4/momorph-cli_0.2.4_linux_arm64.tar.gz"
-      sha256 "d868f346a52e37221ff95bc05b5be55cf33e9d7c4ee8fb7fd2edceaa7f5c4652"
+      url "https://github.com/momorph/cli/releases/download/v0.2.5/momorph-cli_0.2.5_linux_arm64.tar.gz"
+      sha256 "1a792ee3a7926f5b1426578ecc2a04f26dd5da78156a81c76b374f2c2eb6dd9e"
       def install
         bin.install "momorph"
       end
