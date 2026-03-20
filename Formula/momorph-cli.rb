@@ -5,21 +5,21 @@
 class MomorphCli < Formula
   desc "MoMorph CLI is a command-line tool (CLI) used to initialize, manage, and operate MoMorph projects following an AI-Driven Development approach."
   homepage "https://github.com/momorph/cli"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/momorph/cli/releases/download/v0.5.0/momorph-cli_0.5.0_darwin_amd64.tar.gz"
-      sha256 "983c41ee68e399ed0fd71bd5767631049755d33f09950d974b375a4e5f1de5eb"
+      url "https://github.com/momorph/cli/releases/download/v0.6.0/momorph-cli_0.6.0_darwin_amd64.tar.gz"
+      sha256 "9e4197a86b5155fb56ee0b31a40c233e73caf1618201c30f36597e96e2fc4ac6"
 
       define_method(:install) do
         bin.install "momorph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/momorph/cli/releases/download/v0.5.0/momorph-cli_0.5.0_darwin_arm64.tar.gz"
-      sha256 "64f7822d55a5d04848645d55905b85234e36199e05c683167de22a8e057eec5e"
+      url "https://github.com/momorph/cli/releases/download/v0.6.0/momorph-cli_0.6.0_darwin_arm64.tar.gz"
+      sha256 "a72c6e6a47ff66d332e5315079687414e937fb66619228ea2732befd49d891d5"
 
       define_method(:install) do
         bin.install "momorph"
@@ -29,15 +29,15 @@ class MomorphCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/momorph/cli/releases/download/v0.5.0/momorph-cli_0.5.0_linux_amd64.tar.gz"
-      sha256 "db4bc105937c879847d772a7758499720305f6ffbc57049bfdff68d993c8c13d"
+      url "https://github.com/momorph/cli/releases/download/v0.6.0/momorph-cli_0.6.0_linux_amd64.tar.gz"
+      sha256 "a6ddcc4e5cbb9df3722fdc5aaa5f68a1364f19433585beff55221dec460be465"
       define_method(:install) do
         bin.install "momorph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/momorph/cli/releases/download/v0.5.0/momorph-cli_0.5.0_linux_arm64.tar.gz"
-      sha256 "91d0aabf3961a6e83718f49f56313abb85808b97bcc42c6808a080f50ec0d9d7"
+      url "https://github.com/momorph/cli/releases/download/v0.6.0/momorph-cli_0.6.0_linux_arm64.tar.gz"
+      sha256 "65802810692ad30857bd3a18231ff5390f511e2b0844a7894ef34bd510a9640b"
       define_method(:install) do
         bin.install "momorph"
       end
